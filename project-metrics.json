@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2026-07-19T10:00:08.449Z",
+  "projects": [
+    {
+      "slug": "authlib",
+      "stars": 5372,
+      "monthlyDownloads": 148511663
+    },
+    {
+      "slug": "joserfc",
+      "stars": 169,
+      "monthlyDownloads": 148019015
+    },
+    {
+      "slug": "otpauth",
+      "stars": 160,
+      "monthlyDownloads": 32997
+    }
+  ]
+}
