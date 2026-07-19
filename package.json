@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run update:sponsors && npm run update:project-metrics",
+    "build": "npm run update:sponsors && npm run update:projects",
     "update:sponsors": "sponsorkit",
-    "update:project-metrics": "node scripts/update-project-metrics.mjs"
+    "update:projects": "node scripts/update-projects.mjs"
   },
   "devDependencies": {
     "@types/node": "^26.1.1",

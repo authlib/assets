@@ -1,9 +1,9 @@
 import { rename, writeFile } from 'node:fs/promises'
 
 const projects = [
-  { slug: 'authlib', repository: 'authlib/authlib', packageName: 'authlib' },
-  { slug: 'joserfc', repository: 'authlib/joserfc', packageName: 'joserfc' },
-  { slug: 'otpauth', repository: 'authlib/otpauth', packageName: 'otpauth' },
+  { slug: 'authlib', name: 'Authlib', repository: 'authlib/authlib' },
+  { slug: 'joserfc', name: 'joserfc', repository: 'authlib/joserfc' },
+  { slug: 'otpauth', name: 'OTP Auth', repository: 'authlib/otpauth' },
 ]
 
 const githubToken = process.env.GITHUB_TOKEN || process.env.SPONSORKIT_GITHUB_TOKEN
@@ -74,6 +74,15 @@ function readMonthlyDownloads(html, project) {
   )
 }
 
+function readLatestVersion(html, project) {
+  const match = html.match(/Latest version:\s*([^\s<]+)/i)
+  const version = match?.[1]?.trim()
+  if (!version) {
+    throw new Error(`Latest version not found for ${project.slug}`)
+  }
+  return version
+}
+
 async function getProjectMetrics(project) {
   const githubHeaders = {
     Accept: 'application/vnd.github+json',
@@ -84,18 +93,20 @@ async function getProjectMetrics(project) {
     githubHeaders,
   )
   const downloadsPage = await fetchHtml(
-    `https://pypistats.org/packages/${encodeURIComponent(project.packageName)}`,
+    `https://pypistats.org/packages/${encodeURIComponent(project.slug)}`,
   )
 
   return {
     slug: project.slug,
+    name: project.name,
+    latestVersion: readLatestVersion(downloadsPage, project),
     stars: readMetric(repository.stargazers_count, `${project.slug} stars`),
     monthlyDownloads: readMonthlyDownloads(downloadsPage, project),
   }
 }
 
-const outputUrl = new URL('../project-metrics.json', import.meta.url)
-const temporaryUrl = new URL('../project-metrics.json.tmp', import.meta.url)
+const outputUrl = new URL('../projects.json', import.meta.url)
+const temporaryUrl = new URL('../projects.json.tmp', import.meta.url)
 const metrics = []
 
 for (const project of projects) {
