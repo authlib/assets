@@ -62,7 +62,7 @@ export default defineConfig({
   },
 
   outputDir: '.',
-  formats: ['svg', 'png'],
+  formats: ['svg'],
   width: 800,
   renderer: 'tiers',
 })
