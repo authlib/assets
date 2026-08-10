@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-08-09T01:03:43.261Z",
+  "updatedAt": "2026-08-10T01:05:16.334Z",
   "projects": [
     {
       "slug": "authlib",
       "name": "Authlib",
       "latestVersion": "1.7.2",
       "stars": 5396,
-      "monthlyDownloads": 152169928
+      "monthlyDownloads": 150815772
     },
     {
       "slug": "joserfc",
       "name": "joserfc",
       "latestVersion": "1.7.4",
       "stars": 171,
-      "monthlyDownloads": 150553602
+      "monthlyDownloads": 148782912
     },
     {
       "slug": "otpauth",
       "name": "OTP Auth",
       "latestVersion": "2.2.1",
       "stars": 160,
-      "monthlyDownloads": 42401
+      "monthlyDownloads": 39340
     }
   ]
 }
