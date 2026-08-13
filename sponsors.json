@@ -1,5 +1,13 @@
 [
   {
+    "name": "AgentScore",
+    "login": "agentscore",
+    "avatar": "https://avatars.githubusercontent.com/u/262908748?v=4",
+    "amount": 10,
+    "link": "https://github.com/agentscore",
+    "org": true
+  },
+  {
     "name": null,
     "login": "BrewHubPHL",
     "avatar": "https://avatars.githubusercontent.com/u/255236385?u=f4175233f1b0f4889af16b4aa0a36373c2cb045d&v=4",
