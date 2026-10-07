@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T04:02:23.117Z",
+  "updatedAt": "2026-10-07T03:30:04.380Z",
   "projects": [
     {
       "slug": "authlib",
@@ -12,7 +12,7 @@
       "slug": "joserfc",
       "name": "joserfc",
       "latestVersion": "1.7.5",
-      "stars": 178,
+      "stars": 179,
       "monthlyDownloads": 98534978
     },
     {
