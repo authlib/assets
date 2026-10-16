@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-15T02:31:45.470Z",
+  "updatedAt": "2026-10-16T02:26:29.767Z",
   "projects": [
     {
       "slug": "authlib",
       "name": "Authlib",
       "latestVersion": "1.9.1",
-      "stars": 5434,
+      "stars": 5433,
       "monthlyDownloads": 107757780
     },
     {
