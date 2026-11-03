@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-11-02T03:38:40.727Z",
+  "updatedAt": "2026-11-03T04:43:30.247Z",
   "projects": [
     {
       "slug": "authlib",
       "name": "Authlib",
       "latestVersion": "1.9.2",
-      "stars": 5447,
+      "stars": 5448,
       "monthlyDownloads": 107757780
     },
     {
       "slug": "joserfc",
       "name": "joserfc",
       "latestVersion": "1.7.7",
-      "stars": 181,
+      "stars": 182,
       "monthlyDownloads": 98534978
     },
     {
