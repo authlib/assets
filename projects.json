@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-09T03:50:30.620Z",
+  "updatedAt": "2026-11-10T05:24:42.455Z",
   "projects": [
     {
       "slug": "authlib",
       "name": "Authlib",
       "latestVersion": "1.9.5",
-      "stars": 5450,
+      "stars": 5452,
       "monthlyDownloads": 107757780
     },
     {
@@ -19,7 +19,7 @@
       "slug": "otpauth",
       "name": "OTP Auth",
       "latestVersion": "2.2.2",
-      "stars": 159,
+      "stars": 160,
       "monthlyDownloads": 92602
     }
   ]
